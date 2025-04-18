@@ -102,17 +102,14 @@ scanf("%d", &g);
 for (int j =1; j<=10; j++ ){
       printf("%d \n",g*j);
 }
-      
 
-
-
-
-
-
-
-
-
-
+for( int d =1; d<=5; d++){
+     if( d==4){
+          break;
+     }
+      printf( "%d \n", d);
+}
+      printf("end");
 
 
 // for( int j =g; j>=1; j--){
@@ -126,8 +123,18 @@ for (int j =1; j<=10; j++ ){
      //      printf("%d \n", c);
      //      c++;
      //  }while (c <= 5); 
+    int c;
+     do{
+          printf("enter a number :");
+          scanf("%d \n", &c);
+          printf("%d \n",c);
+          if(c % 2 !=0){ 
+               break;
+          }
+         
+     } while (1);
      
-      
-
+     printf( "thank your");
+     
     return 0;
 }
