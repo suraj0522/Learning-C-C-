@@ -94,16 +94,26 @@ int g;
 printf("enter a number :");
 scanf("%d", &g);
 
-int sum =0;
+// int sum =0;
 // while(s <=g){
 //       printf( "%d \n",s);
 //       s++;
 // }
-for (int j =1, h=g; j<= g && h>=1; j++,h-- ){
-      sum = sum +j;
-      printf("%d \n", h);
+for (int j =1; j<=10; j++ ){
+      printf("%d \n",g*j);
 }
-printf("sum = %d \n", sum);
+      
+
+
+
+
+
+
+
+
+
+
+
 
 // for( int j =g; j>=1; j--){
 //           printf("%d \n", j);
