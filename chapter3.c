@@ -79,9 +79,9 @@ if(x = 4){
 // }else{
 //      printf("invalid character \n");
 // }
-   for(int i = 0;  i <= 1; i++){
-      printf( "%d \n", i);
-   }
+//    for(int i = 0;  i <= 1; i++){
+//       printf( "%d \n", i);
+//    }
 
 //    for(int d = 10;  d >= 1; d= d-1){
 //      printf( "%d \n", d);
@@ -90,26 +90,26 @@ if(x = 4){
 //       printf( "%c \n", ch);
 // }
 
-int g;
-printf("enter a number :");
-scanf("%d", &g);
+// int g;
+// printf("enter a number :");
+// scanf("%d", &g);
 
-// int sum =0;
-// while(s <=g){
-//       printf( "%d \n",s);
-//       s++;
+// // int sum =0;
+// // while(s <=g){
+// //       printf( "%d \n",s);
+// //       s++;
+// // }
+// for (int j =1; j<=10; j++ ){
+//       printf("%d \n",g*j);
 // }
-for (int j =1; j<=10; j++ ){
-      printf("%d \n",g*j);
-}
 
-for( int d =1; d<=5; d++){
-     if( d==4){
-          break;
-     }
-      printf( "%d \n", d);
-}
-      printf("end");
+// for( int d =1; d<=5; d++){
+//      if( d==4){
+//           break;
+//      }
+//       printf( "%d \n", d);
+// }
+//       printf("end");
 
 
 // for( int j =g; j>=1; j--){
@@ -123,18 +123,56 @@ for( int d =1; d<=5; d++){
      //      printf("%d \n", c);
      //      c++;
      //  }while (c <= 5); 
-    int c;
-     do{
-          printf("enter a number :");
-          scanf("%d \n", &c);
-          printf("%d \n",c);
-          if(c % 2 !=0){ 
-               break;
-          }
+//     int c;
+     // do{
+     //      printf("enter a number :");
+     //      scanf("%d \n", &c);
+     //      printf("%d \n",c);
+
+     //      if(c % 7 ==0){ 
+     //           break;
+     //      }
          
-     } while (1);
+     // } while (1);
+
+     // for ( int m=0; m<=6 ;m++){
+     //        if (m==3){
+     //             continue;
+     //        }
+           
+     //      printf("%d \n", m);
+     // }
      
-     printf( "thank your");
+     // for (int k=5; k<=50; k++){
+     //      if (k % 2!=0){
+     //           printf("%d \n", k);
+
+     //      } 
+     // }
+
+
+     int k;
+     printf("enter a number :");
+     scanf("%d", &k);
+
+     int fact =1;
+     for (int i =1; i<=k; i++){
+          fact = fact * i;
+     }
+     printf("final fact is %d \n", fact);
+
+     int sum =0;
+
+     for ( int t=5; t<=50; t++){
+          sum +=t;
+         
+     }
+     printf("sum is %d\n",sum);
+    
+
+    
+    
+     printf( "thank your \n");
      
     return 0;
 }
