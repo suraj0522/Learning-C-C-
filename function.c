@@ -2,21 +2,20 @@
 
 // void printhello();
 // void printgdbye();
-void namaste();
-void bonjour();
+// void namaste();
+// void bonjour();
+int sum(int a, int b);
 int main(){
-       printf("neter f for french & i for india \n");
-       char ch;
-       scanf("%c", &ch);
-
-       if (ch =='i'){
-        namaste();
-       }else{
-          bonjour();
-       }
-       
-       
+     int a, b;
+       printf("print first number :\n");
+       scanf("%d", &a);
      
+       printf("print second number :\n");
+       scanf("%d", &b);
+
+     int s = sum(a, b);
+     printf("Sum of %d \n",s);
+
      
     return 0;
 }
@@ -30,11 +29,15 @@ int main(){
      
 // }
 
-void namaste(){
-     printf("namaste \n");
+// void namaste(){
+//      printf("namaste \n");
 
-}
-void bonjour(){
-     printf("bonjour \n");
+// }
+// void bonjour(){
+//      printf("bonjour \n");
 
+// }
+
+int sum(int a, int b){
+     return a + b;
 }
