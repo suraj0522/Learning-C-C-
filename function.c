@@ -6,6 +6,7 @@
 // void bonjour();
 int sum(int a, int b);
 void printtable(int n);
+void calprice(float value);
 int main(){
      int a, b;
        printf("print first number :\n");
@@ -22,6 +23,9 @@ int main(){
        scanf("%d", &n);
 
        printtable(n); //argument or accutal parameter
+
+       float value =100;
+       calprice(value);
 
      
     return 0;
@@ -52,4 +56,8 @@ void printtable(int n){ // formal parameter /parameter
      for (int i = 1; i <= 10; i++){
           printf("%d \n",i*n);
      }
+}
+void calprice(float value){
+     value = value + (value * 0.18);
+     printf("price of final value :%f\n", value);
 }
