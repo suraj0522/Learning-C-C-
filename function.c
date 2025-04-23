@@ -5,6 +5,7 @@
 // void namaste();
 // void bonjour();
 int sum(int a, int b);
+void printtable(int n);
 int main(){
      int a, b;
        printf("print first number :\n");
@@ -15,6 +16,12 @@ int main(){
 
      int s = sum(a, b);
      printf("Sum of %d \n",s);
+
+     int n;
+       printf("enter a number:\n");
+       scanf("%d", &n);
+
+       printtable(n); //argument or accutal parameter
 
      
     return 0;
@@ -40,4 +47,9 @@ int main(){
 
 int sum(int a, int b){
      return a + b;
+}
+void printtable(int n){ // formal parameter /parameter
+     for (int i = 1; i <= 10; i++){
+          printf("%d \n",i*n);
+     }
 }
