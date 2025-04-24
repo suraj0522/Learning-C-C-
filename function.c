@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 
 // void printhello();
 // void printgdbye();
@@ -7,25 +9,36 @@
 int sum(int a, int b);
 void printtable(int n);
 void calprice(float value);
+float sqareArea(float side);
+float circleArea(float rad);
+float rectangleArea(float a, float b);
+
+
+
 int main(){
-     int a, b;
-       printf("print first number :\n");
-       scanf("%d", &a);
+     // int a, b;
+     //   printf("print first number :\n");
+     //   scanf("%d", &a);
      
-       printf("print second number :\n");
-       scanf("%d", &b);
+     //   printf("print second number :\n");
+     //   scanf("%d", &b);
 
-     int s = sum(a, b);
-     printf("Sum of %d \n",s);
+     // int s = sum(a, b);
+     // printf("Sum of %d \n",s);
 
-     int n;
-       printf("enter a number:\n");
-       scanf("%d", &n);
+     // int n;
+     //   printf("enter a number:\n");
+     //   scanf("%d", &n);
 
-       printtable(n); //argument or accutal parameter
+     //   printtable(n); //argument or accutal parameter
 
-       float value =100;
-       calprice(value);
+     //   float value =100;
+     //   calprice(value);
+     //   printf("value is %f\n", value);
+       float a = 5.0;
+       float b= 10.0;
+       printf("area is %f\n", rectangleArea(a , b));
+       
 
      
     return 0;
@@ -60,4 +73,14 @@ void printtable(int n){ // formal parameter /parameter
 void calprice(float value){
      value = value + (value * 0.18);
      printf("price of final value :%f\n", value);
+}
+float sqareArea(float side){
+     return side * side;
+}
+
+float circleArea(float rad){
+      return 3.14 * rad * rad;
+}
+float rectangleArea(float a, float b){
+     return a * b;
 }
