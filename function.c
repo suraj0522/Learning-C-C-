@@ -12,6 +12,7 @@ void calprice(float value);
 float sqareArea(float side);
 float circleArea(float rad);
 float rectangleArea(float a, float b);
+void printHW(int count);
 
 
 
@@ -38,7 +39,8 @@ int main(){
        float a = 5.0;
        float b= 10.0;
        printf("area is %f\n", rectangleArea(a , b));
-       
+
+       printHW(10);       
 
      
     return 0;
@@ -84,3 +86,11 @@ float circleArea(float rad){
 float rectangleArea(float a, float b){
      return a * b;
 }
+void printHW(int count){
+     if (count ==0){
+          return;
+     }
+     
+          printf("hello world\n");
+          printHW(count - 1);
+     }
