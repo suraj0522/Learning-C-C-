@@ -13,6 +13,8 @@ float sqareArea(float side);
 float circleArea(float rad);
 float rectangleArea(float a, float b);
 void printHW(int count);
+int fact(int d);
+float convertTemp(float celsius);
 
 
 
@@ -40,7 +42,12 @@ int main(){
        float b= 10.0;
        printf("area is %f\n", rectangleArea(a , b));
 
-       printHW(10);       
+       printHW(10);
+       
+       printf("factorial is :%d\n", fact(5));
+
+       float far = convertTemp(32);
+       printf("far is :%f\n", far);
 
      
     return 0;
@@ -94,3 +101,17 @@ void printHW(int count){
           printf("hello world\n");
           printHW(count - 1);
      }
+
+int fact(int d) {
+     if (d==0){
+          return 1;
+
+     }
+     int factNm1 = fact(d - 1);
+     int factD = d * factNm1;
+     return factD;
+}
+float convertTemp(float celsius){
+     float far = celsius * (9.0 / 5.0) + 32;
+     return far;
+}
