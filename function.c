@@ -16,6 +16,9 @@ void printHW(int count);
 int fact(int d);
 float convertTemp(float celsius);
 
+int calcpersentage(int science, int maths,int sanskrit);
+int fib(int g);
+
 
 
 int main(){
@@ -42,12 +45,19 @@ int main(){
        float b= 10.0;
        printf("area is %f\n", rectangleArea(a , b));
 
-       printHW(10);
+     //   printHW(10);
        
-       printf("factorial is :%d\n", fact(5));
+     //   printf("factorial is :%d\n", fact(5));
 
        float far = convertTemp(32);
        printf("far is :%f\n", far);
+
+       int sci=80;
+       int math=64;
+       int sanskrit=45;
+       printf("percentage is :%d\n", calcpersentage(sci, math, sanskrit));
+
+       printf("fib is :%d\n",fib(6));
 
      
     return 0;
@@ -114,4 +124,24 @@ int fact(int d) {
 float convertTemp(float celsius){
      float far = celsius * (9.0 / 5.0) + 32;
      return far;
+}
+
+int calcpersentage(int science, int maths,int sanskrit){
+     return((science + maths + sanskrit) / 3);
+}
+int fib(int g){
+     
+          if(g==0){
+          return 0;
+     }
+     if(g==1){
+          return 1;
+     
+}
+
+     int fibNm1 = fib(g - 1);
+     int fibNm2 = fib(g - 2);
+     int fibN = fibNm1 + fibNm2;
+     // printf( "fib of %d is :%d\n", g, fibN);
+     return fibN;
 }
