@@ -2,8 +2,10 @@
 
 void square(int n);
 void _square(int* n);
-void swap(int a,int b);
-
+// void swap(int a,int b);
+void _swap( int* a, int* b);
+void prtAddress(int a);
+void dowork( int f, int g ,int* sum, int* mul, int* avg);
 
 
 int main(){
@@ -55,9 +57,20 @@ int main(){
 
     int x =3 ;
     int y= 5;
-    swap(x,y);
+    _swap(&x,&y);
     printf("a = %d\n", x);
     printf("b = %d\n", y);
+
+     int a =10;
+     prtAddress(a);
+    printf( "print address =%u\n",&a);
+
+    int f=3;
+     int g=5;
+     int sum , prod , avg;
+     dowork(f,g,&sum,&prod,&avg);
+     printf("sum = %d, prod = %d, avg = %d\n", sum, prod, avg);
+
 
 
 
@@ -84,10 +97,29 @@ void _square(int* n){
         printf("sqare = %d \n", *n);
 }
 
-void swap(int a,int b){
-    int t= a;
-    a = b;
-    b = t;
-    printf("a = %d\n", a);
-    printf("b = %d\n", b);
+// void swap(int a,int b){
+//     int t= a;
+//     a = b;
+//     b = t;
+//     printf("a = %d\n", a);
+//     printf("b = %d\n", b);
+// }
+void _swap( int* a, int* b){
+     int t = *a;
+     *a = *b;
+     *b = t;
+    //  printf("a = %d\n", *a);
+    //  printf("b = %d\n", *b);
+}
+
+void prtAddress(int a){
+     printf( "print address =%u\n",&a);
+}
+void dowork( int f, int g,int*sum, int *mul,int *avg){
+    * sum = f + g;
+     * mul = f * g;
+     * avg = (f + g) / 2;
+
+
+      
 }
